@@ -1,3 +1,4 @@
+import os 
 """
 Django settings for my_site project.
 
@@ -141,3 +142,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "polls"
 ]
+
+
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
